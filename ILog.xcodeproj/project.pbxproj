@@ -13,6 +13,7 @@
 		E793D82E22531CDC00983237 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E793D82C22531CDC00983237 /* Main.storyboard */; };
 		E793D83022531CDE00983237 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E793D82F22531CDE00983237 /* Assets.xcassets */; };
 		E793D83322531CDE00983237 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E793D83122531CDE00983237 /* LaunchScreen.storyboard */; };
+		E793D83922531F4D00983237 /* ILog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E793D83822531F4D00983237 /* ILog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E793D82F22531CDE00983237 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E793D83222531CDE00983237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E793D83422531CDE00983237 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E793D83822531F4D00983237 /* ILog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			children = (
 				E793D81A22531B8B00983237 /* ILog.h */,
 				E793D81B22531B8B00983237 /* Info.plist */,
+				E793D83822531F4D00983237 /* ILog.swift */,
 			);
 			path = ILog;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					E793D81622531B8B00983237 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					E793D82522531CDC00983237 = {
 						CreatedOnToolsVersion = 10.1;
@@ -197,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E793D83922531F4D00983237 /* ILog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +361,7 @@
 		E793D82022531B8B00983237 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -373,6 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ankur.ILog;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -381,6 +388,7 @@
 		E793D82122531B8B00983237 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
